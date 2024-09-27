@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Pacifico&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body
+{
+    display: grid;
+    row-gap: 20px;
+    background-color: #F2E6D8;
+}
+::selection
+{
+    background-color: navajowhite;
+    color: black;
+}
+header
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main
+{
+    background-color: #F42C1D;
+    border-radius: 30px;
+}
+.logo h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.link ul
+{
+    display: flex;
+    column-gap: 50px;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+a:hover
+{
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.button #btn
+{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightcyan;
+    color: cornflowerblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.button #btn:hover
+{
+    background-color: #F42C1D;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.center
+{
+    padding: 100px;
+    line-height: 15px;
+    text-align: center;
+}
+.center h1
+{
+    font-size: 100px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    color: white;
+}
+.list
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 100px;
+    border-radius: 30px;
+    height: 300px;
+    background-color: lightblue;
+    color: #0C3AA2;
+}
+.list #list #title
+{
+    line-height: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    color:#071777;
+    font-size: 20px;
+}
+.list #list #option
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.list #list #option:hover
+{
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    background-color: #0C3AA2;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.list #list #option:hover #num
+{
+    display: none;
+}
+#image img
+{
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+}
+hr
+{
+    background-color: #071777;
+}
+.food
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+.food #image1, #image2
+{
+    height: 450px;
+    width: 500px;
+    border-radius: 30px;
+    background-color: black;
+}
+.food #image1 #img, #image2 #img
+{
+    background-image: url('../0205afec51d79660bf39cbd4b2bfe675.jpg');
+    height: 70%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.food #image1 #word, #image2 #word
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    font-size: 25px;
+}
+.item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.item #diff, #list2
+{
+    display: grid;
+}
+.item #diff
+{
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    color: #9F6444;
+}
+.item #diff #title
+{
+    line-height: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    color: #62331E;
+}
+#diff #button2 #btn
+{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #321E1F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+#diff #button2 #btn:hover
+{
+    background-color: #321E1F;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.item #list2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.item #list2 #list
+{
+    width: 200px;
+    color: #71555C;
+}
+.item #list2 #list h4
+{
+    color: #34282C;
+    font-size: 20px;
+    font-weight: 600;
+}
+.pizza
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsl(38, 28%, 57%);
+    border-radius: 20px;
+    min-height: 400px;
+}
+.pizza #diff #button3 #btn
+{
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: #F42C1D;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+}
+.pizza #diff #button3 #btn:hover
+{
+    background-color: white;
+    color: #F42C1D;
+    transition: all 0.5s ease-in-out;
+}
+.pizza #diff #title h1
+{
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+    color: #321E1F;
+    font-size: 40px;
+}
+.pizza #diff #title
+{
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    color: #71555C;
+    line-height: 30px;
+}
+.pizza #diff #size
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+    color: #321E1F;
+}
+.pizza #diff #size li
+{
+    list-style: circle;
+}
+.insta
+{
+    display: grid;
+}
+.insta h1
+{
+    font-family: 'Modak', system-ui;
+    font-weight: 400;
+    color: #F42C1D;
+    text-align: center;
+    font-size: 40px;
+}
+.insta #post
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.insta #item
+{
+    position: relative;
+    background-color: white;
+    height: 430px;
+    width: 330px;
+    border-radius: 20px;
+    border: 1px solid black;
+    /* display: grid; */
+}
+.insta #item:hover
+{
+    box-shadow: 8px 8px 0px #000000;
+    transform: rotate(15deg);
+    transition: all 0.2s ease-in-out;
+}
+.insta #item #img
+{
+    background-image: url('../0205afec51d79660bf39cbd4b2bfe675.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.insta #item #dot
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    column-gap: 10px;
+}
+.insta #item #dot #circle
+{
+    background-color: lightgrey;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+#text #name h5
+{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+#text #view h5
+{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.insta #text #name
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 200px;
+    position: absolute;
+}
+.insta #text #name i
+{
+    float: right;
+}
+.insta #text #view
+{
+    position: absolute;
+    bottom: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 170px;
+}
+.insta #text #view #btn
+{
+    border-radius: 20px;
+    background-color: lightgray;
+    border: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.number
+{
+    height: 400px;
+    background-color: #F42C1D;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number #item
+{
+    background-color: #000000;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border-bottom-left-radius: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 10px;
+}
+.number #item #text h1
+{
+    font-family: 'Modak', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.number #item #text h2
+{
+    color: yellow;
+    font-family: 'Modak', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+footer
+{
+    height: 300px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+footer #contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 50px;
+}
+footer #icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+footer #contact a
+{
+    color: white;
+}
